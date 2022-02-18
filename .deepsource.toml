@@ -7,4 +7,8 @@ enabled = true
   [analyzers.meta]
   environment = ['nodejs']
   complexity_analysis = true
+
+    [analyzers.meta.complexity_options]
+    max_function_lines = 20
+    max_function_params = 4
   

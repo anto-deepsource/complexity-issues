@@ -5,7 +5,7 @@ function foo(a, b, c, d) {
                 if (true) {
                     if (true) {
                         console.log('too much nesting!!')
-                    } else {
+                    } else {g
                         
                     }
                 } else {
@@ -26,7 +26,7 @@ function bar(string, location) {
     let items = {
         item1: "value1",
         item2: "value2",
-        item2: "value3"
+        item3: "value3"
     };
 
     try {
