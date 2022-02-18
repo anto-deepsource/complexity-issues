@@ -25,7 +25,8 @@ function foo(a, b, c, d) {
 function bar(string, location) {
     let items = {
         item1: "value1",
-        item2: "value2"
+        item2: "value2",
+        item2: "value3"
     };
 
     try {
