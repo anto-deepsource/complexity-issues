@@ -6,4 +6,6 @@ enabled = true
 
   [analyzers.meta]
   environment = ['nodejs']
+  complexity_analysis = true
+
   
