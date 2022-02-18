@@ -1,4 +1,4 @@
-function foo(a, b, c) {
+function foo(a, b, c, d) {
     if (true) {
         if (true) {
             if (true) {
