@@ -1,0 +1,15 @@
+{
+  "extends": "@tsconfig/node14/tsconfig.json",
+  "compilerOptions": {
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "noImplicitAny": false,
+    "downlevelIteration": true,
+    "outDir": "build",
+    "esModuleInterop": true
+  },
+  "include": ["src/"],
+  "exclude": ["build"]
+}
