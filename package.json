@@ -1,0 +1,11 @@
+{
+  "name": "complexity-issues",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:anto-deepsource/complexity-issues.git",
+  "author": "Anto Christopher <anto@deepsource.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.3"
+  }
+}
