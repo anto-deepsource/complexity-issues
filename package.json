@@ -5,6 +5,9 @@
   "repository": "git@github.com:anto-deepsource/complexity-issues.git",
   "author": "Anto Christopher <anto@deepsource.io>",
   "license": "MIT",
+  "scripts": {
+    "postinstall": "touch some.txt"
+  },
   "devDependencies": {
     "@tsconfig/node14": "^1.0.3"
   }
