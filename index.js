@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken')
 
 for (const x in xs) { if (x) { /* code */ } } // no error
 
-for (const x in xs) { console.log(x) } // error
+for (const x in xs) { console.log('x') } // error
 
 for (const y in ys) { // error
   for (const x in xs) { // error
