@@ -6,8 +6,4 @@ enabled = true
 
   [analyzers.meta]
   environment = ["nodejs"]
-
-[[transformers]]
-name = "standardjs"
-enabled = true
   
