@@ -8,8 +8,8 @@
     "noImplicitAny": false,
     "downlevelIteration": true,
     "outDir": "build",
-    "esModuleInterop": true
-  },
-  "include": ["src/"],
-  "exclude": ["build"]
+    "esModuleInterop": true,
+    "include": ["src/"],
+    "exclude": ["build"]
+  }
 }
