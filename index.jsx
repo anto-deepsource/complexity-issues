@@ -5,9 +5,7 @@
         <Baz1>
           <Baz2>
             <Baz3>
-              <Baz4>
-                <Baz5 />
-              </Baz4>
+              <Baz4/>
             </Baz3>
           </Baz2>
         </Baz1>
