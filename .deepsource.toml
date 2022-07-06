@@ -6,6 +6,7 @@ enabled = true
 
   [analyzers.meta]
   environment = ["nodejs"]
+  plugins = ["react"]
 
 [[transformers]]
 name = "standardjs"
