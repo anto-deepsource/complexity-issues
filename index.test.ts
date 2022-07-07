@@ -1,5 +1,5 @@
-function aaaaa() {
+function aaaaa1() {
   console.log('aaa')
 }
 
-aaaaa()
+aaaaa1()
