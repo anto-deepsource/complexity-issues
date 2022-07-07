@@ -1,4 +1,4 @@
-function aaaaa() {
+function aaaaa () {
   console.log('aaa')
 }
 
