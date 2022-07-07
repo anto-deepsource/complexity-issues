@@ -7,7 +7,7 @@ enabled = true
   [analyzers.meta]
   environment = ["nodejs"]
   plugins = ["react"]
-  track_test_doc_coverage = true
+  track_test_doc_coverage = false
 
 [[transformers]]
 name = "standardjs"
