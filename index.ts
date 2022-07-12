@@ -23,5 +23,5 @@ let foo: number | string | number
 let bar: string & number & string
 
 function foobar(quz: string | number | number): boolean | boolean {
-  // function body
+  // function body here
 }
