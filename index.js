@@ -1,20 +1,42 @@
-const vm = require('vm')
-const jwt = require('jsonwebtoken')
+import { ObjectId } from 'mongodb';
+import { generateNewDateObject } from 'nop/utils';
+import { achievementNotFound, achievementNotPublished, unauthorizedToSendAchievement, unauthorizedToSendThisUser, userIdentifiersNotProvided, } from '../../lib/errors';
+import { achievements, receivedAchievements as ra } from '../../lib/db';
+import bar from './bar' // import-default
+import { getCmsUsers } from '../util';
+import { publishStatsSendAchievement } from '../../lib/events';
+import { pushMessageSendAchievement } from '../../lib/notifications';
+import sendEmailReceivedAchievement from '../../lib/email';
 
-for (const x in xs) { if (x) { /* code */ } } // no error
+var mod = require('./mod') // no-require
 
-for (const x in xs) { console.log('x') } // error
-
-for (const y in ys) { // error
-  for (const x in xs) { // error
-    console.log(x, y)
+var o = { // no-accesor-pairs
+  set a(value) {
+      this.val = value;
   }
+};
+
+function bar() { return /=foo/; } // no-div-regex
+
+const foo = 1
+
+if (foo == null) { // no-eq-null
+  console.log(foo)
 }
 
-const pattern = /[0-9][:alpha:]/ // posix in regex
-app.get((req, res) => vm.runInThisContext(req.params.code)) // unsafe vm
+var b = !!foo; // no-implicit-coercion
 
-const a = jwt.sign({ foo: 'bar' }, key, { algorithm: 'none' }) // unsafe jwt
+var foo1 = 1; // no-implicit-globals
 
-const arr = [{name: 'eslint'}];
-arr.map(item => item.name); // unused return value
+var SECONDS;
+
+SECONDS = 60; // no-magic-numbers
+
+a = (b * c); // no-extra-parens
+
+export default bool
+
+var foo2 = 1; // init-declarations
+var bar; // init-declarations
+
+var undefined = 'hi' // no-undefined

@@ -5,6 +5,7 @@
   "repository": "git@github.com:anto-deepsource/complexity-issues.git",
   "author": "Anto Christopher <anto@deepsource.io>",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "postinstall": "touch some.txt"
   },
