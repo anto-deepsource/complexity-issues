@@ -7,4 +7,3 @@ enabled = true
   [analyzers.meta]
   environment = ["nodejs", "jest", "mocha"]
   style_guide = "airbnb"
-    
