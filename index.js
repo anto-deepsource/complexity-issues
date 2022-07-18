@@ -16,7 +16,7 @@ var o = { // no-accesor-pairs
   }
 };
 
-function bar() { return /=foo/; } // no-div-regex
+function bar1() { return /=foo/; } // no-div-regex
 
 const foo = 1
 
@@ -37,6 +37,6 @@ a = (b * c); // no-extra-parens
 export default bool
 
 var foo2 = 1; // init-declarations
-var bar; // init-declarations
+var bar2; // init-declarations
 
 var undefined = 'hi' // no-undefined
