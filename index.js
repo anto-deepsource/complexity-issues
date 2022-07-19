@@ -8,7 +8,7 @@ import { publishStatsSendAchievement } from '../../lib/events';
 import { pushMessageSendAchievement } from '../../lib/notifications';
 import sendEmailReceivedAchievement from '../../lib/email';
 
-var mod = require('./mod') // no-require
+var mod = require('./mod1') // import/no-commonjs
 
 var o = { // no-accesor-pairs
   set a(value) {
