@@ -8,7 +8,7 @@ import { publishStatsSendAchievement } from '../../lib/events';
 import { pushMessageSendAchievement } from '../../lib/notifications';
 import sendEmailReceivedAchievement from '../../lib/email';
 
-var Hello = <a target='_blank' href="http://example.comss/"></a>
+var Hello = <a target='_blank' href="http://example.coms/"></a>
 
 var mod = require('./mod11') // import/no-commonjs
 
