@@ -8,6 +8,8 @@ import { publishStatsSendAchievement } from '../../lib/events';
 import { pushMessageSendAchievement } from '../../lib/notifications';
 import sendEmailReceivedAchievement from '../../lib/email';
 
+var Hello = <a target='_blank' href="http://example.com/"></a>
+
 var mod = require('./mod11') // import/no-commonjs
 
 var o = { // no-accesor-pairs
