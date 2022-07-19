@@ -6,5 +6,3 @@ enabled = true
 
   [analyzers.meta]
   environment = ["nodejs", "jest", "mocha"]
-  dialect = "flow"
-  style_guide = "airbnb"
