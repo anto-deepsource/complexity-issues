@@ -7,4 +7,4 @@ enabled = true
   [analyzers.meta]
   plugins= ["react"]
   environment = ["nodejs", "jest", "mocha"]
-  
+  style_guide = "airbnb"
