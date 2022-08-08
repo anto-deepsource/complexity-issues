@@ -1,4 +1,6 @@
-function toBool(item) {
+import { version } from './package.json'
+
+function toBool (item) {
   switch (typeof item) {
     case 'boolean':
       return item
@@ -20,8 +22,6 @@ function toBool(item) {
       throw new TypeError('Unrecognised type: unable to convert to boolean')
   }
 }
-
-import { version } from './package.json'
 const IS_PRODUCTION = process.env.NODE_ENV === 'prod'
 const IS_ON_PREM = toBool(process.env.ON_PREM)
 
@@ -117,7 +117,7 @@ export default {
     publishableKey: process.env.STRIPE_KEY
   },
 
-  extendPlugins(plugins) {
+  extendPlugins (plugins) {
     const services = [
       '~/plugins/services/rudder.client.ts',
       '~/plugins/components/statuspage.client.ts',
@@ -234,7 +234,7 @@ export default {
 
   router: {
     middleware: ['auth', 'licenseValidation'],
-    extendRoutes(routes, resolve) {
+    extendRoutes (routes, resolve) {
       //! In case of updates to `meta.provider`, update corresponding data in `plugins/helpers/provider.ts` as well.
       routes.push({
         name: 'github',
@@ -302,7 +302,7 @@ export default {
         }
       }
     },
-    extend(config) {
+    extend (config) {
       if (process.env.NODE_ENV === 'development') {
         config.devtool = 'source-map'
       }
