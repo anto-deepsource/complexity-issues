@@ -12,5 +12,6 @@
     <NuxtLink href="/product" to="/product" someOtherProp="someOtherValue">Product</NuxtLink>
     <NLink href="/product">Product</NLink>
     <n-link href="/product">Product</n-link>
+    <n-link href="/product">Product</n-link>
   </div>
 </template>
