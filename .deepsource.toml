@@ -3,11 +3,3 @@ version = 1
 [[analyzers]]
 name = "javascript"
 enabled = true
-
-  [analyzers.meta]
-  environment = ["nodejs"]
-
-[[transformers]]
-name = "standardjs"
-enabled = true
-  
