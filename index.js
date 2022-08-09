@@ -16,8 +16,8 @@ app.get((req, res) => vm.runInThisContext(req.params.code)) // unsafe vm
 
 const a = jwt.sign({ foo: 'bar' }, key, { algorithm: 'none' }) // unsafe jwt
 
-const arr = [{name: 'eslint'}];
-arr.map(item => item.name); // unused return value
+const arr = [{ name: 'eslint' }]
+arr.map(item => item.name) // unused return value
 
-const abc = 1; const def = 2;
-const ghi = {a:1,b:2}
+const abc = 1; const def = 2
+const ghi = { a: 1, b: 2 }
