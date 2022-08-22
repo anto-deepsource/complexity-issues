@@ -1,0 +1,15 @@
+{
+  "rules": {
+    "guard-for-in": ["error"],
+    "no-alert": "error",
+    "no-useless-concat": "error"
+  },
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "rules": {
+        "no-useless-concat": "off"
+      }
+    }
+  ]
+}
