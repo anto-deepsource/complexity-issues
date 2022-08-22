@@ -1,6 +1,7 @@
 import vm from 'vm'
 import b from './b'
 import jwt from 'jsonwebtoken'
+const tls = require('tls')
 
 app.get((req, res) => vm.runInThisContext(req.params.code)) // unsafe vm
 const a = jwt.sign({ foo: 'bar' }, key, { algorithm: 'none' }) // unsafe jwt
@@ -37,5 +38,10 @@ export async function f2(xs) {
   return ys
 }
 
+const connection = tls.connect(443, 'www.abc.com', {
+  secureProtocol: 'TLSv1_method', // insecure version
+  minVersion: 'TLSv1.1', // insecure version
+  maxVersion: 'TLSv1.2'
+}, () => { })
 
 export default 2
