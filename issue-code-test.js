@@ -1,4 +1,9 @@
+import vm from 'vm'
 import b from './b'
+import jwt from 'jsonwebtoken'
+
+app.get((req, res) => vm.runInThisContext(req.params.code)) // unsafe vm
+const a = jwt.sign({ foo: 'bar' }, key, { algorithm: 'none' }) // unsafe jwt
 
 let foo = {}
 let bar = foo?.foobar
