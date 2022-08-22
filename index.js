@@ -25,3 +25,17 @@ const connection = tls.connect(443, 'www.abc.com', {
   minVersion: 'TLSv1.1', // insecure version
   maxVersion: 'TLSv1.2'
 }, () => { })
+
+$routeProvider.when('/myroute', {
+  controller: 'MyController'
+})
+
+$stateProvider.state('mystate', {
+  controller: 'MyController'
+})
+
+$routeProvider.when('/myroute', {
+  ...a,
+  controller: 'MyController as vm',
+  controllerAs: 'vm'
+})
