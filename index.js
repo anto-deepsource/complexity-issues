@@ -21,7 +21,7 @@ const arr = [{ name: 'eslint' }];
 arr.map(item => item.name); // unused return value
 
 const connection = tls.connect(443, 'www.abc.com', {
-  secureProtocol: 'TLSv1_2_method',
-  minVersion: 'TLSv1.2',
-  maxVersion: 'TLSv1.3'
+  secureProtocol: 'TLSv1_method', // insecure version
+  minVersion: 'TLSv1.1', // insecure version
+  maxVersion: 'TLSv1.2'
 }, () => { })
