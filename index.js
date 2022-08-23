@@ -35,7 +35,7 @@ $stateProvider.state('mystate', {
 })
 
 $routeProvider.when('/myroute', {
-  ...aaaaaaa,
+  ...aaaaaaaaaa,
   controller: 'MyController as vm',
   controllerAs: 'vm'
 })
