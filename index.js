@@ -18,3 +18,5 @@ const a = jwt.sign({ foo: 'bar' }, key, { algorithm: 'none' }) // unsafe jwt
 
 const arr = [{name: 'eslint'}];
 arr.map(item => item.name11); // unused return value
+debugger
+console.log('a')
