@@ -1,20 +1,23 @@
-const vm = require('vm')
-const jwt = require('jsonwebtoken')
+import helmet, { hsts } from 'helmet'
+import exp, { static as stat } from 'express'
+import lib from 'libxmljs';
 
-for (const x in xs) { if (x) { /* code */ } } // no error
+const app = exp()
+app.use(hsts({ includeSubdomains: false })) // 1002 - 
 
-for (const x in xs) { console.log('x') } // error
+app.use(helmet.dnsPrefetchControl({ allow: true })) // 1003
 
-for (const y in ys) { // error
-  for (const x in xs) { // error
-    console.log(x, y)
-  }
-}
+express.use(stat('public', { dotfiles: 'allow' })) // d020 -
 
-const pattern = /[0-9][:alpha:]/ // posix in regex
-app.get((req, res) => vm.runInThisContext(req.params.code)) // unsafe vm
+const h = require('helmet'); h({ noSniff: false }) // 1001 -
 
-const a = jwt.sign({ foo: 'bar' }, key, { algorithm: 'none' }) // unsafe jwt
+lib.parseXmlString('', { noent: true }) // d022
 
-const arr = [{name: 'eslint'}];
-arr.map(item => item.name); // unused return value
+Buffer([1, 2, 3]) // d026
+new Buffer([1, 2, 3])
+new Buffer(10)
+
+helmet.contentSecurityPolicy({ directives: { frameAncestors: 'none' } }) // d024
+const { contentSecurityPolicy } = require('helmet')
+const foo = 1
+contentSecurityPolicy({ directives: { frameAncestors: 'none', foo } }) // d024
