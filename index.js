@@ -1,20 +1,14 @@
-const vm = require('vm')
-const jwt = require('jsonwebtoken')
+Object.prototype.hasOwnProperty.call(foo, 'bar')
+({}.hasOwnProperty.call(foo, 'bar'))
+foo.baz["isPrototypeOf"](bar)
+foo.bar.baz["isPrototypeOf"](bar)
 
-for (const x in xs) { if (x) { /* code */ } } // no error
-
-for (const x in xs) { console.log('x') } // error
-
-for (const y in ys) { // error
-  for (const x in xs) { // error
-    console.log(x, y)
-  }
-}
-
-const pattern = /[0-9][:alpha:]/ // posix in regex
-app.get((req, res) => vm.runInThisContext(req.params.code)) // unsafe vm
-
-const a = jwt.sign({ foo: 'bar' }, key, { algorithm: 'none' }) // unsafe jwt
-
-const arr = [{name: 'eslint'}];
-arr.map(item => item.name); // unused return value
+foo.hasOwnProperty('bar')
+foo.isPrototypeOf(bar)
+foo.propertyIsEnumerable(bar.baz)
+foo.propertyIsEnumerable(bar())
+foo.bar.hasOwnProperty(bar[baz])
+foo.bar.baz.isPrototypeOf(bar['baz'])
+foo.bar.baz.isPrototypeOf(bar)
+foo[baz].isPrototypeOf(bar)
+foo[baz].bar.isPrototypeOf(bar)
