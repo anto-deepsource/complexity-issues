@@ -6,4 +6,4 @@ if (x === -0) {
   // doSomething()...
 }
 
-const a = [1, , 3]
+const aa = [1, , 3]

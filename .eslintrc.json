@@ -1,12 +1,10 @@
 {
   "rules": {
-    "default-param-last": "off"
   },
   "overrides": [
     {
       "files": ["*.ts"],
       "rules": {
-        "no-useless-concat": "off"
       }
     }
   ]
