@@ -1,11 +1,7 @@
-var aaa = "a" + "b"
-
-for (var i = 0; i < 10; i--) {
-
+function foo(a, b = 0, c) {
+  console.log(b)
 }
 
-alert()
-
-for (key in foo) {
-  doSomething(key)
+if (x === -0) {
+  // doSomething()...
 }

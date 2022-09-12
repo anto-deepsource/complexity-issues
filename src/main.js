@@ -1,11 +1,6 @@
-var aaa = "a" + "b"
+const a = [1, , 3]
 
-for (var i = 0; i < 10; i--) {
-
-}
-
-alert()
-
-for (key in foo) {
-  doSomething(key)
-}
+const obj = {
+  city: "nyc",
+  city: "ohio"
+};

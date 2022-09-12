@@ -1,5 +1,5 @@
 {
   "rules": {
-    "for-direction": "error"
+    "no-sparse-arrays": "off"
   }
 }

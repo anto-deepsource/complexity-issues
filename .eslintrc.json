@@ -1,8 +1,6 @@
 {
   "rules": {
-    "guard-for-in": ["error"],
-    "no-alert": "error",
-    "no-useless-concat": "error"
+    "default-param-last": "off"
   },
   "overrides": [
     {
