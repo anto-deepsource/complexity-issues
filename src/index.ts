@@ -2,7 +2,7 @@ async function foo() {
   return
 }
 
-const aa = async () => {}
+const aa = async () => { return }
 
 class FooBar {
   public async foo() {
