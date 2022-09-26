@@ -23,9 +23,7 @@ switch(format) {
   case '.json':
       // do something
       break;
-  case '.json':
-      // do something else
-      break;
+  
   default:
       // do something
       break;
