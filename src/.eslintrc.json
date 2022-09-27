@@ -1,7 +1,10 @@
 {
   "rules": {
     "no-unsafe-negation": "error",
-    "no-useless-computed-key": "error"
+    "no-useless-computed-key": "error",
+    "no-duplicate-imports": [
+      "error"
+    ]
   },
   "overrides": [
     {

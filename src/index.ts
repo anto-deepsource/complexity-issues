@@ -24,4 +24,4 @@ class Foo {
 }
 
 export { find } from 'module';
-export { find } from 'module';
+export { finder } from 'module';

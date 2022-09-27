@@ -6,6 +6,12 @@
       {
         "enforceForOrderingRelations": true
       }
+    ],
+    "no-duplicate-imports": [
+      "error",
+      {
+        "includeExports": true
+      }
     ]
   },
   "overrides": [
@@ -20,12 +26,6 @@
             "terms": [
               "tstodo"
             ]
-          }
-        ],
-        "no-duplicate-imports": [
-          "error",
-          {
-            "includeExports": true
           }
         ]
       },
