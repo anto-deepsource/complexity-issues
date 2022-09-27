@@ -14,4 +14,4 @@ if (! a < b) {}
 var aaaaaaa = { ['0']: 0 };
 
 export { find } from 'module';
-export { find } from 'module';
+export { finder } from 'module';
