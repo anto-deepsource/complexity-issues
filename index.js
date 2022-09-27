@@ -11,7 +11,7 @@ const aa = [1, , 3]
 
 if (! a < b) {}
 
-var aaaaaaa = { ['0']: 0 };
+var aaaaaaaa = { ['0']: 0 };
 
 export { find } from 'module';
 export { finder } from 'module';
