@@ -1,13 +1,24 @@
 {
   "rules": {
-    "no-unsafe-negation": "error"
+    "no-unsafe-negation": "error",
+    "no-useless-computed-key": "error"
   },
   "overrides": [
     {
-      "files": [".js"],
+      "files": [
+        ".js"
+      ],
       "rules": {
-        "no-warning-comments": "off"
-      }
+        "no-warning-comments": "off",
+        "no-useless-computed-key": ["error", { "enforceForClassMembers": true }]
+      },
+      "plugins": [],
+      "extends": [],
+      "env": {}
     }
-  ]
+  ],
+  "plugins": [],
+  "extends": [],
+  "env": {},
+  "globals": {}
 }

@@ -8,4 +8,20 @@ const obj = {
 
 if (! a < b) {}
 
+var aaaaaaa = { ['0']: 0 };
+
+class Foo {
+  ["foo"] = "bar";
+
+  [0]() {}
+  ['a']() {}
+  get ['b']() {}
+  set ['c'](value) {}
+
+  static ["foo"] = "bar";
+
+  static ['a']() {}
+}
+
+export { find } from 'module';
 export { find } from 'module';

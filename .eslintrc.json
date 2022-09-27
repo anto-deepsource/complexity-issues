@@ -1,15 +1,41 @@
 {
   "rules": {
     "no-warning-comments": "error",
-    "no-unsafe-negation": ["error", { "enforceForOrderingRelations": true }]
+    "no-unsafe-negation": [
+      "error",
+      {
+        "enforceForOrderingRelations": true
+      }
+    ]
   },
   "overrides": [
     {
-      "files": ["*.ts"],
+      "files": [
+        "*.ts"
+      ],
       "rules": {
-        "no-warning-comments": ["error", { "terms": ["tstodo"] }],
-        "no-duplicate-imports": ["error", { "includeExports": true }]
-      }
+        "no-warning-comments": [
+          "error",
+          {
+            "terms": [
+              "tstodo"
+            ]
+          }
+        ],
+        "no-duplicate-imports": [
+          "error",
+          {
+            "includeExports": true
+          }
+        ]
+      },
+      "plugins": [],
+      "extends": [],
+      "env": {}
     }
-  ]
+  ],
+  "plugins": [],
+  "extends": [],
+  "env": {},
+  "globals": {}
 }
