@@ -4,3 +4,5 @@ const obj = {
   city: "nyc",
   city: "ohio"
 };
+
+if (! a < b) {}

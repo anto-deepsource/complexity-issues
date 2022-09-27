@@ -1,10 +1,14 @@
 {
   "rules": {
+    "no-warning-comments": "error",
+    "no-unsafe-negation": ["error", { "enforceForOrderingRelations": true }]
   },
   "overrides": [
     {
       "files": ["*.ts"],
       "rules": {
+        "no-warning-comments": ["error", { "terms": ["tstodo"] }],
+        "no-duplicate-imports": ["error", { "includeExports": true }]
       }
     }
   ]

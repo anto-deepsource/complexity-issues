@@ -1,3 +1,4 @@
+// tstodo need to correct this
 function foo(a, b = 0, c) {
   console.log(b)
 }
@@ -7,3 +8,7 @@ if (x === -0) {
 }
 
 const aa = [1, , 3]
+
+if (! a < b) {}
+
+export { find } from 'module';

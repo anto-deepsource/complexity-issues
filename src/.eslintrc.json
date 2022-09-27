@@ -1,4 +1,13 @@
 {
   "rules": {
-  }
+    "no-unsafe-negation": "error"
+  },
+  "overrides": [
+    {
+      "files": [".js"],
+      "rules": {
+        "no-warning-comments": "off"
+      }
+    }
+  ]
 }
