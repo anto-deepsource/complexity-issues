@@ -1,20 +1,33 @@
-const vm = require('vm')
-const jwt = require('jsonwebtoken')
+const init = async (core, proc) => {	
 
-for (const x in xs) { if (x) { /* code */ } } // no error
-
-for (const x in xs) { console.log('x') } // error
-
-for (const y in ys) { // error
-  for (const x in xs) { // error
-    console.log(x, y)
-  }
 }
 
-const pattern = /[0-9][:alpha:]/ // posix in regex
-app.get((req, res) => vm.runInThisContext(req.params.code)) // unsafe vm
+const cli = async (argv = [], opts = {}) => {	
 
-const a = jwt.sign({ foo: 'bar' }, key, { algorithm: 'none' }) // unsafe jwt
+}
 
-const arr = [{name: 'eslint'}];
-arr.map(item => item.name); // unused return value
+const myAdapter = (core) => ({	
+  readdir: async (path, options) => [],
+});
+
+
+test("should create server auth adapter", async () => {		
+  return expect(basicScaffold("auth", "server")).resolves.toBe(true);
+});
+
+(
+  async function init() {	
+
+  }
+)();
+
+module.exports = {
+  async listen() {	
+  },
+
+  init: async () => {
+
+  },
+
+  readdir: (vfs) => async (path) => [],
+}
