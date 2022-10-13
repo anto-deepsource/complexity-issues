@@ -5,5 +5,4 @@ name = "javascript"
 enabled = true
 
   [analyzers.meta]
-    plugins = ['react']
-    style_guide = "airbnb"
+    plugins = ['react', 'vue', 'angular', 'angularjs']
