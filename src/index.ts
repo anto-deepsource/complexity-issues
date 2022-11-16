@@ -23,7 +23,7 @@ class Foo {
   static ['a']() {}
 }
 
-const someString = 'a'
+const someString: string = 'a'
 const someArray = ['a', 'b', 'c']
 
 const template = `Here is ${someString} and ${someArray}`
