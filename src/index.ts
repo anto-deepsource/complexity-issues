@@ -23,5 +23,10 @@ class Foo {
   static ['a']() {}
 }
 
+const someString = 'a'
+const someArray = ['a', 'b', 'c']
+
+const template = `Here is ${someString} and ${someArray}`
+
 export { find } from 'module';
 export { finder } from 'module';
