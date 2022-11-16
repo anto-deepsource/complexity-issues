@@ -1,5 +1,5 @@
 const aa: string = 'a'
 
 export default function foobar() {
-  // some
+  const a = 1
 }

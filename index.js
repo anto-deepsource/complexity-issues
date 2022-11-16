@@ -20,5 +20,5 @@ const arr = [{name: 'eslint'}];
 arr.map(item => item.name); // unused return value
 
 function foobar() {
-  // some
+  const a = 1
 }
