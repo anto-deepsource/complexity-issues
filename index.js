@@ -1,20 +1,17 @@
-const vm = require('vm')
-const jwt = require('jsonwebtoken')
-
-for (const x in xs) { if (x) { /* code */ } } // no error
-
-for (const x in xs) { console.log('x') } // error
-
-for (const y in ys) { // error
-  for (const x in xs) { // error
-    console.log(x, y)
-  }
+// tstodo need to correct thiss
+function foo(a, b = 0, c) {
+  console.log(b)
 }
 
-const pattern = /[0-9][:alpha:]/ // posix in regex
-app.get((req, res) => vm.runInThisContext(req.params.code)) // unsafe vm
+if (x === -0) {
+  // doSomething()...
+}
 
-const a = jwt.sign({ foo: 'bar' }, key, { algorithm: 'none' }) // unsafe jwt
+const aa = [1, , 3]
 
-const arr = [{name: 'eslint'}];
-arr.map(item => item.name); // unused return value
+if (! a < b) {}
+
+var aaaaaaaa = { ['0']: 0 };
+
+export { find } from 'module';
+export { finder } from 'module';
