@@ -1,5 +1,17 @@
-const aa: string = 'a'
+class StringMatch extends Matcher {
+  constructor(public readonly name: any, private readonly pattern: RegExp) {
+    super();
+  }
 
-export default function foobar() {
-  const a = 1
+  public test(actual: any): MatchResult {
+    const result = new MatchResult(actual);
+    if (!actual.match(this.pattern)) {
+      result.recordFailure({
+        matcher: this,
+        path: [],
+        message: `Expected ${this.pattern} but received ${actual}`,
+      });
+    }
+    return result;
+  }
 }
