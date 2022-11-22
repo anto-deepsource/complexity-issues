@@ -18,3 +18,15 @@ const a = jwt.sign({ foo: 'bar' }, key, { algorithm: 'none' }) // unsafe jwt
 
 const arr = [{name: 'eslint'}];
 arr.map(item => item.name); // unused return value
+
+const aa = 1
+
+foo()
+
+function foo() {
+  if (aa === 1) {
+    return 1
+  } else {
+    return 2
+  }
+}
