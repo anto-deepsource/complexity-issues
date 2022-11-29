@@ -1,20 +1,23 @@
-const vm = require('vm')
-const jwt = require('jsonwebtoken')
+const cond = !!!isPresent;
+const cond2 = Boolean(!!isPresent);
+const cond3 = new Boolean(!!isPresent);
 
-for (const x in xs) { if (x) { /* code */ } } // no error
-
-for (const x in xs) { console.log('x') } // error
-
-for (const y in ys) { // error
-  for (const x in xs) { // error
-    console.log(x, y)
-  }
+if (!!cond) {
+    // ...
 }
 
-const pattern = /[0-9][:alpha:]/ // posix in regex
-app.get((req, res) => vm.runInThisContext(req.params.code)) // unsafe vm
+if (Boolean(cond2)) {
+    // ...
+}
 
-const a = jwt.sign({ foo: 'bar' }, key, { algorithm: 'none' }) // unsafe jwt
+while (!!cond3) {
+    // ...
+}
 
-const arr = [{name: 'eslint'}];
-arr.map(item => item.name); // unused return value
+do {
+    // ...
+} while (Boolean(cond));
+
+for (; !!cond; ) {
+    // ...
+}
