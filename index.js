@@ -20,3 +20,4 @@ const arr = [{name: 'eslint'}];
 arr.map(item => item.name); // unused return value
 
 console.error(1)
+console.log(1)
