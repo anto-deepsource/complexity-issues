@@ -1,5 +1,12 @@
 const vm = require('vm')
 const jwt = require('jsonwebtoken')
+const Validator = require('ajv');
+    
+let validator = new Validator({ allErrors: true });
+
+app.get((req, res) => {
+  validator.validate(req.body)
+})
 
 for (const x in xs) { if (x) { /* code */ } } // no error
 
