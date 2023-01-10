@@ -1,5 +1,14 @@
 const vm = require('vm')
 const jwt = require('jsonwebtoken')
+const cp = require('child_processs')
+
+app.get((req, res) => {
+  cp.execSync('cat ' + req.body)
+})
+
+app.get((req, res) => {
+  cp.execSync('cat ' + notReq)
+})
 
 for (const x in xs) { if (x) { /* code */ } } // no error
 
