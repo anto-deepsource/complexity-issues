@@ -1,6 +1,6 @@
 const vm = require('vm')
 const jwt = require('jsonwebtoken')
-const cp = require('child_processs')
+const cp = require('child_process')
 
 app.get((req, res) => {
   cp.execSync('cat ' + req.body)
