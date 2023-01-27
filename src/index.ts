@@ -28,7 +28,7 @@ app.post('/', (req, res) => {
     shell.openExternal(url); // unsanitized content used with `openExternal`
 });
 
-const sanitize(url) => url
+const sanitize = (url) => url
 
 app.post('/', (req, res) => {
     const url = req.body.url;
