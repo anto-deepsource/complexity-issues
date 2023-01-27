@@ -1,20 +1,43 @@
-const vm = require('vm')
-const jwt = require('jsonwebtoken')
+const express = require('express');
+const { BrowserWindow, shell } = require('electron')
 
-for (const x in xs) { if (x) { /* code */ } } // no error
-
-for (const x in xs) { console.log('x') } // error
-
-for (const y in ys) { // error
-  for (const x in xs) { // error
-    console.log(x, y)
+const mainWindow1 = new BrowserWindow({
+  webPreferences: {
+    webSecurity: false, // `webSecurity` should not be set to false
+    allowRunningInsecureContent: true // `allowRunningInsecureContent` should not be set to true
   }
-}
+})
 
-const pattern = /[0-9][:alpha:]/ // posix in regex
-app.get((req, res) => vm.runInThisContext(req.params.code)) // unsafe vm
+const app = express();
+app.set('view engine', 'hbs');
+app.post('/', (req, res) => {
+    const options = req.body.params;
+    res.render('home', options); // options can have the `layout` property
+});
 
-const a = jwt.sign({ foo: 'bar' }, key, { algorithm: 'none' }) // unsafe jwt
+app.post('/', (req, res) => {
+    const options = req.body.params;
+    res.render('home', {
+      name: options.name, // construct the object with only the required properties
+      title: options.title
+    });
+});
 
-const arr = [{name: 'eslint'}];
-arr.map(item => item.name); // unused return value
+app.post('/', (req, res) => {
+    const url = req.body.url;
+    shell.openExternal(url); // unsanitized content used with `openExternal`
+});
+
+app.post('/', (req, res) => {
+    const url = req.body.url;
+    const safeUrl = sanitize(url)
+    shell.openExternal(safeUrl); // sanitized content used with `openExternal`
+});
+
+const mainWindow2 = new BrowserWindow({
+// alternatively: Do not set these properties in the options preferences object, as they're configured correctly by default.
+    webPreferences: {
+    webSecurity: true,
+    allowRunningInsecureContent: false
+    }
+})
