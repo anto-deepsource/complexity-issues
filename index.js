@@ -1,4 +1,4 @@
-const comp = <span sx={{ verticalAlign: 'super' }}>Unleashing Possibilitiessss</span>
+const comp = <span sx={{ verticalAlign: 'super' }}>Unleashing Possibilitiesssss</span>
 
 class Foo {
   bar() {
