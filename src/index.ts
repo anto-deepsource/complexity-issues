@@ -1,1 +1,1 @@
-const aa: string = 'a'
+const aa: string = "a";
