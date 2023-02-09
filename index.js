@@ -12,7 +12,6 @@ for (const x in xs) {
 } // error
 
 if (1 === x) {
-  
 }
 
 for (const y in ys) {
