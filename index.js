@@ -11,6 +11,10 @@ for (const x in xs) {
   console.log("aaaaaa");
 } // error
 
+if (1 === x) {
+  
+}
+
 for (const y in ys) {
   // error
   for (const x in xs) {
