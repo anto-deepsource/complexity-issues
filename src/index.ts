@@ -1,1 +1,1 @@
-const aa: string = 'a'
+for(i=0;i<1;i++){console.log(i)}
