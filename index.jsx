@@ -1,7 +1,8 @@
-for (i = 0; i < 1; i++) { console.log(i); debugger }
+for(i=0;i<1;i++){console.log(i); debugger;}
 if (i) {
 
-} else {
+} 
+else {
 
 }
 function render () {
