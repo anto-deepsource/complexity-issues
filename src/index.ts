@@ -1,7 +1,7 @@
-import tls from 'tls'
+import tls from "tls";
 tls.connect(
   {
-    rejectUnauthorized: false
+    rejectUnauthorized: false,
   },
-  response => {}
-)
+  (response) => {}
+);
