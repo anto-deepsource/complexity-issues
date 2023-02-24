@@ -1,5 +1,9 @@
 version = 1
 
+test_patterns = [
+  "test/**"
+]
+
 [[analyzers]]
 name = "docker"
 enabled = true
@@ -8,10 +12,6 @@ enabled = true
   dockerfile_paths = [
     "src/Dockerfile_src"
   ]
-
-test_patterns = [
-  "test/**"
-]
 
 [[analyzers]]
 name = "javascript"
