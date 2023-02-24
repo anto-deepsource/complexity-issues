@@ -3,7 +3,7 @@ const jwt = require("jsonwebtoken");
 
 for (const x in xs) {
   if (x) {
-    /* codes */
+    /* codess */
   }
 } // no error
 
