@@ -4,7 +4,7 @@ version = 1
 name = "javascript"
 
   [analyzers.meta]
-  plugin = ["angularjs"]
+  plugins = ["angularjs"]
 
 [[transformers]]
 name = "prettier"
