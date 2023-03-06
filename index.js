@@ -35,36 +35,45 @@ function main() {
   return 1;
 }
 
-angular.module('myAppWithSceDisabledmyApp', []).config(function($sceProvider) {
+angular.module("myAppWithSceDisabledmyApp", []).config(function ($sceProvider) {
   $sceProvider.enabled(false);
 });
 
-angular.module('myAppWithSceDisabledmyApp', []).config(function($sceProvider) {
+angular.module("myAppWithSceDisabledmyApp", []).config(function ($sceProvider) {
   $sceProvider.enabled(true);
 });
 
-angulars.module('myAppWithSceDisabledmyApp', []).config(function($sceProvider) {
-  $sceProvider.enabled(false);
-});
+angulars
+  .module("myAppWithSceDisabledmyApp", [])
+  .config(function ($sceProvider) {
+    $sceProvider.enabled(false);
+  });
 
-angular.modules('myAppWithSceDisabledmyApp', []).config(function($sceProvider) {
-  $sceProvider.enabled(false);
-});
+angular
+  .modules("myAppWithSceDisabledmyApp", [])
+  .config(function ($sceProvider) {
+    $sceProvider.enabled(false);
+  });
 
-angular.module('myAppWithSceDisabledmyApp', []).configs(function($sceProvider) {
-  $sceProvider.enabled(false);
-});
+angular
+  .module("myAppWithSceDisabledmyApp", [])
+  .configs(function ($sceProvider) {
+    $sceProvider.enabled(false);
+  });
 
-angular.module('myAppWithSceDisabledmyApp', []).config(function($sceProviders) {
-  $sceProviders.enabled(false);
-});
+angular
+  .module("myAppWithSceDisabledmyApp", [])
+  .config(function ($sceProviders) {
+    $sceProviders.enabled(false);
+  });
 
-angular.module('myAppWithSceDisabledmyApp', []).config(function($sceProviders) {
-});
+angular
+  .module("myAppWithSceDisabledmyApp", [])
+  .config(function ($sceProviders) {});
 
-const { BrowserWindow } = require('electron')
+const { BrowserWindow } = require("electron");
 const mainWindow = new BrowserWindow({
   webPreferences: {
-    contextIsolation: false // `contextIsolation` should not be set to false
-  }
-})
+    contextIsolation: false, // `contextIsolation` should not be set to false
+  },
+});
