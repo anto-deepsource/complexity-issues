@@ -8,8 +8,11 @@ for (const x in xs) {
 } // no error
 
 for (const x in xs) {
-  console.log("x");
+  console.log("aaaaaa");
 } // error
+
+if (1 === x) {
+}
 
 for (const y in ys) {
   // error
