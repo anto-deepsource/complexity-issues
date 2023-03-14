@@ -1,15 +1,15 @@
-const aa: string = 'a'
+const aa: string = "a";
 
 const xs: number[] = [1, 2, 3];
-const ys: Array<number> = xs.map(x => 2 * x);
+const ys: Array<number> = xs.map((x) => 2 * x);
 
 class Mx {
   public static get myField1() {
     return 1;
   }
 
-  private get ['myField2']() {
-    return 'hello world';
+  private get ["myField2"]() {
+    return "hello world";
   }
 }
 
@@ -30,9 +30,9 @@ class Animal {
   constructor(breed, name) {
     this.animalName = name;
   }
-  
+
   // No accessibility modifier
-  animalName: string; 
+  animalName: string;
 
   // No accessibility modifier
   get name(): string {
@@ -43,7 +43,7 @@ class Animal {
   set name(value: string) {
     this.animalName = value;
   }
-  
+
   // method
   walk() {}
 }
