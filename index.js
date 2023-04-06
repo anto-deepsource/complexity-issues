@@ -6,4 +6,4 @@ angular.module("myApp", []).config(function ($sceDelegateProvider) {
   $sceDelegateProvider.trustedResourceUrlList(["**://hello.example.com"]);
 });
 
-if(i=0;i<j;i++){console.log(i)}
+for(i=0;i<j;i++){console.log(i)}
