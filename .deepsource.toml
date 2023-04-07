@@ -7,6 +7,3 @@ test_patterns = [
 
 [[analyzers]]
 name = "javascript"
-
-[[transformers]]
-name = "prettier"
