@@ -34,3 +34,7 @@ function App() {
 function main() {
   return 1;
 }
+
+function main1() {
+  return 1;
+}
