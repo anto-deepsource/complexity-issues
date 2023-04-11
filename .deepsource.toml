@@ -1,7 +1,9 @@
 version = 1
 
+test_patterns = [
+  "tests/**",
+  "tes't_*.js"
+]
+
 [[analyzers]]
 name = "javascript"
-
-[[transformers]]
-name = "prettier"
