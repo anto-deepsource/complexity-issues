@@ -8,7 +8,7 @@ for (const x in xs) {
 } // no error
 
 for (const x in xs) {
-  console.log("x");
+  console.log("xs");
 } // error
 
 for (const y in ys) {
