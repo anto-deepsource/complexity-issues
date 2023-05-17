@@ -1,5 +1,4 @@
 {
-  "extends": "@tsconfig/node14/tsconfig.json",
   "compilerOptions": {
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
@@ -8,8 +7,14 @@
     "noImplicitAny": false,
     "downlevelIteration": true,
     "outDir": "build",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "module": "ES2015",
+    "moduleResolution": "bundler"
   },
-  "include": ["src/"],
-  "exclude": ["build"]
+  "include": [
+    "src/"
+  ],
+  "exclude": [
+    "build"
+  ]
 }
