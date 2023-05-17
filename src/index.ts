@@ -1,4 +1,7 @@
-const aa: string = 'a'
+import { abcdef } from "./world";
+let b = abcdef;
+
+const aaa: string = "a";
 
 // @ts-ignore
-const a=b
+const a = b;
