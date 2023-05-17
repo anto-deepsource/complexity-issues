@@ -1,1 +1,3 @@
-export const abcd = 1;
+import { abcdef } from ".";
+
+let b = abcdef
