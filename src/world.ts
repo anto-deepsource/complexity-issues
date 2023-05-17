@@ -1,3 +1,3 @@
 import { abcdef } from ".";
 
-let b = abcdef
+let b = abcdef;
