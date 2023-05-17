@@ -1,8 +1,8 @@
-import { abcd } from "./hello"
+import { abcd } from "./hello";
 
-const aaa: string = 'a'
+const aaa: string = "a";
 
-let bbb = abcd
+let bbb = abcd;
 
 // @ts-ignore
 const a = b;

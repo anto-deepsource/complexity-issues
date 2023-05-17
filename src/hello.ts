@@ -1,1 +1,1 @@
-export const abcd = 1
+export const abcd = 1;
