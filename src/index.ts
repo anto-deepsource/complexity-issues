@@ -1,5 +1,5 @@
 import { abcdef } from "./world";
-let b = abcdef
+let b = abcdef;
 
 const aaa: string = "a";
 
