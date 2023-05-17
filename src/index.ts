@@ -1,4 +1,4 @@
-const aa: string = 'a'
+const aaa: string = 'a'
 
 // @ts-ignore
 const a=b
