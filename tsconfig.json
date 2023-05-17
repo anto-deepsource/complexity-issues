@@ -11,10 +11,6 @@
     "module": "ES2015",
     "moduleResolution": "bundler"
   },
-  "include": [
-    "src/"
-  ],
-  "exclude": [
-    "build"
-  ]
+  "include": ["src/"],
+  "exclude": ["build"]
 }
