@@ -1,4 +1,4 @@
-import { abcd } from "./hello";
+import { abcd } from "./world"
 
 const aaa: string = "a";
 
