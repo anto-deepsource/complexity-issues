@@ -1,6 +1,6 @@
-const aa: string = 'a'
+const aa: string = "a";
 
-const bb: string = 'a'
+const bb: string = "a";
 
 // @ts-ignore
-const a=b
+const a = b;
