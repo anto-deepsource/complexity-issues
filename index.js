@@ -31,7 +31,7 @@ function App() {
   return 0;
 }
 
-let a = 1;
+let ab = 1;
 
 function main() {
   return 1;
