@@ -34,3 +34,5 @@ function App() {
 function main() {
   return 1;
 }
+
+var Hello = <a target='_blank' href="http://example.com/"></a>
