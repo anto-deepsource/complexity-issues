@@ -36,3 +36,7 @@ function main() {
 }
 
 var Hello = <a target="_blank" href="http://example.com/"></a>;
+
+function main2() {
+  return 1;
+}
