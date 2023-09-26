@@ -44,3 +44,7 @@ foo.bar.baz && foo.bar.baz.biz.nez
 foo["some string"] && foo["some string"].bar
 this.bar &&this.bar.baz
 foo &&  foo(bar, baz, bam)
+
+if (config && config.onUpdate) {
+  
+}
