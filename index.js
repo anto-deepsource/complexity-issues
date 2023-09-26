@@ -46,5 +46,4 @@ this.bar && this.bar.baz;
 foo && foo(bar, baz, bam);
 
 if (config && config.onUpdate) {
-  
 }
