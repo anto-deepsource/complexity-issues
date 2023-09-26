@@ -35,15 +35,15 @@ function main() {
   return 1;
 }
 
-foo && foo.bar;
-foo && foo();
-foo && foo.bar();
-foo.bar && foo.bar.baz;
-f(x && x[0]);
-foo.bar.baz && foo.bar.baz.biz.nez;
-foo["some string"] && foo["some string"].bar;
-this.bar && this.bar.baz;
-foo && foo(bar, baz, bam);
+if (foo && foo.bar) {};
+if (foo && foo()) {};
+if (foo && foo.bar()) {};
+if (foo.bar && foo.bar.baz) {};
+if (f(x && x[0])) {};
+if (foo.bar.baz && foo.bar.baz.biz.nez) {};
+if (foo["some string"] && foo["some string"].bar) {};
+if (this.bar && this.bar.baz) {};
+if (foo && foo(bar, baz, bam)) {};
 
 if (config && config.onUpdate) {
 }
