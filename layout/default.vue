@@ -10,8 +10,8 @@
 export default {
   head: {
     bodyAttrs: {
-      class: 'h-screen bg-white font-sans antialiased',
+      class: "h-screen bg-white font-sans antialiased",
     },
   },
-}
+};
 </script>
